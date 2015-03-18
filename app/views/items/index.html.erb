@@ -1,0 +1,21 @@
+<h1>Welcome to the restaurant!</h1>
+<h3>Here is today's menu</h3>
+
+
+<table>
+ 
+<% @items.each do |item| %>
+ <tr>
+    <td><a href= "/items/<%= item.id %>"><%= item.name %></a></td>
+    <td><%= item.price %></td>
+    <td><%= item.description %></td>
+    <td><a href= "/items/<%= item.id %>/edit">Edit</a></td>
+    <td><a href= "/items/<%= item.id %>/destroy">Delete</a></td>
+  </tr>
+  <% end %>
+</table>
+
+
+<p>
+  <a href ="/items/new">Add a new Menu Item</a>
+</p>

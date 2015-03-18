@@ -1,0 +1,12 @@
+<h1>Edit page</h1>
+<form action="/items/<%= @item.id %>/update" method="post">
+ 
+  <input type="text" name="name" value="<%= @item.name %>">
+ 
+  <input type="text" name="price" value="<%= @item.price %>">
+
+  <input type="text" name="description" value="<%= @item.description %>">
+
+  <input type="submit" value="Submit">
+
+</form>
