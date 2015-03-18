@@ -2,14 +2,14 @@ OnlineMenu::Application.routes.draw do
 
   
   get "/items" => 'items#index'
-  
-  get "/items/:id" => 'items#show'
     
   get "/items/new" => 'items#new'
   
   post "/items/create" => 'items#create'
   
   get "/items/save" => 'items#save'
+  
+  get "/items/:id" => 'items#show'
   
   get "/items/:id/edit" => 'items#edit'
   
