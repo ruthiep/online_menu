@@ -5,7 +5,7 @@ OnlineMenu::Application.routes.draw do
     
   get "/items/new" => 'items#new'
   
-  post "/items/create" => 'items#create'
+  post "/items" => 'items#create'
   
   get "/items/save" => 'items#save'
   
